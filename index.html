@@ -12,13 +12,13 @@
    <script>
       function dato(){
          var dato=document.getElementById("datos").value;
-         if(isNaN(dato)){
+         if(!(isNaN(dato))){
             window.alert("Aca no se pueden ingresar numeros, solo letras.")
          }
-         else if("Alexandra"){
+         else if(dato="Alexandra"){
             window.alert("Tu nombre es Alexandra.")
          }
-         else if("Enrique"){
+         else if(dato="Enrique"){
             window.alert("Tu nombre es Enrique.")
          }
          else{
@@ -28,4 +28,4 @@
       
    </script>
 </body>
-</html> aca no se pueden ingresar numeros solo letras
+</html>
