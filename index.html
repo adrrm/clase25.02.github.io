@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
 <body>
-    <script>
-        var dato=20;
-
-        switch(dato)
-        {
-            case 10:
-                document.write("El valor es 10");
-                break;
-            case 20:
-                document.write("El valor es 20");
-                break;
+   
+   <input id="datos" placeholder="INGRESE SU NOMBRE" type="text">
+   <button onclick="javascript=dato();">VALIDAR</button>
+   <script>
+      function dato(){
+         var dato=document.getElementById("datos").value;
+         switch(dato){
+            case "Enrique":
+               window.alert("Tu nombre es Enrique.");
+               break;
+            case "Alexandra":
+               window.alert("Tu nombre es Alexandra.");
+               break;
             default:
-                document.write("El valor de la variable no coincide con ningún caso");
-        }
-    </script>
+               window.alert("El nombre ingresado no es ni Enrique ni Alexandra.");
+         }
+      }
+      
+   </script>
 </body>
-</html>
+</html> 
