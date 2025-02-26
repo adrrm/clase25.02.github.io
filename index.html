@@ -6,11 +6,16 @@
    <title>Document</title>
 </head>
 <body>
+    <input id="datos" placeholder="Ingrese un numero" type="number">
+    <button onclick="javascript=(datos)">CALCULAR</button>
+    <div id="number"></div>
     <script>
-         for(let index=0;index<51;index=index+2)
+        var datos=document.getElementById("number").value;
+         for(let datos=0;datos>-1;datos=datos-1)
         {
-            document.write(index+"<br>");
+            document.write(datos+"<br>");
         }
+
     </script>
 </body>
 </html>
