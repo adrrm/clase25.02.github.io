@@ -12,18 +12,20 @@
    <script>
       function dato(){
          var dato=document.getElementById("datos").value;
-         switch(dato){
-            case "Enrique":
-               window.alert("Tu nombre es Enrique.");
-               break;
-            case "Alexandra":
-               window.alert("Tu nombre es Alexandra.");
-               break;
-            default:
-               window.alert("El nombre ingresado no es ni Enrique ni Alexandra.");
+         if(isNaN(datos)){
+            window.alert("Aca no se pueden ingresar numeros, solo letras.")
+         }
+         else if("Alexandra"){
+            window.alert("Tu nombre es Alexandra.")
+         }
+         else if("Enrique"){
+            window.alert("Tu nombre es Enrique.")
+         }
+         else{
+            window.alert("Tu nombre no es ni Enrique ni Alexandra.")
          }
       }
       
    </script>
 </body>
-</html> 
+</html> aca no se pueden ingresar numeros solo letras
