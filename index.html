@@ -7,15 +7,16 @@
 </head>
 <body>
     <input id="datos" placeholder="Ingrese un numero" type="number">
-    <button onclick="javascript=(datos)">CALCULAR</button>
-    <div id="number"></div>
+    <button onclick="javascript: calcular()">CALCULAR</button>
+
     <script>
-        var datos=document.getElementById("number").value;
+        function calcular(){
+        var datos=document.getElementById("datos").value;
          for(let datos=0;datos>-1;datos=datos-1)
         {
             document.write(datos+"<br>");
         }
-
+    }
     </script>
 </body>
 </html>
