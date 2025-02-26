@@ -11,10 +11,10 @@
 
     <script>
         function calcular(){
-        var datos=document.getElementById("datos").value;
-         for(let datos=0;datos>-1;datos=datos-1)
+        var vdatos=parseFloat(document.getElementById("datos").value);
+        for(let x=vdatos;x>-1;x=x-1)
         {
-            document.write(datos+"<br>");
+            document.write(vdatos+"<br>");
         }
     }
     </script>
